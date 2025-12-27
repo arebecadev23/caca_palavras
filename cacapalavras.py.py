@@ -10,7 +10,7 @@ altura = len(caca_palavra)
 print("   ", end="")
 for i in range(1, largura + 1):
     print(str(i).rjust(2), end=" ") #.rjust(2) vai criar um espaço d caracteres e alinhar 
-print()
+print() #####fghj
 
 # Linha separadora
 print("   " + "---" * largura)
