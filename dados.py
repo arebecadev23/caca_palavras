@@ -1,4 +1,0 @@
-caca_palavra = ["SISTEMASOPERACIONAPPR",
-                 "RDDFVIGMEMORIARAMGAOA",
-                 "WARLLESRTYUIOOPNBVPAQ",
-                 "REBECAJWBFHWJBFHFHAUL"]
