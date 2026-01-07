@@ -209,3 +209,10 @@ isso significa que a palavra não continua corretamente nessa direção.
 Nesse caso, interrompa imediatamente essa tentativa de busca.
 
 Essa verificação garante que a sequência de letras encontrada na matriz corresponda exatamente à palavra buscada, interrompendo a busca ao primeiro caractere divergente.
+
+## 2 parte:
+projeto dividido em funções e em páginas. 
+
+👉 main cuida da interface
+
+👉 funções cuidam da lógica
