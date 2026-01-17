@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Caça-palavras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="inicio">
+
+    <div class="card">
+        <center><h1>Criar Caça-palavras</h1></center>
+        <form action="/gerar" method="POST">
+            <label>Digite as palavras (separadas por espaço):</label>
+            <textarea name="palavras" required placeholder="EX: FLASK PYTHON CODIGO"></textarea>
+
+            <label style="margin-top: 15px; display: block; font-weight: bold;">Nível de Dificuldade:</label>
+            <select name="nivel" class="select-nivel">
+                <option value="facil">Fácil (10x10)</option>
+                <option value="medio" selected>Médio (15x15)</option>
+                <option value="dificil">Difícil (20x20)</option>
+            </select>
+
+            <button type="submit" class="btn">Gerar jogo</button>
+        </form>
+    </div>
+
+</body>
+</html>

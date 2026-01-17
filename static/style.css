@@ -1,0 +1,147 @@
+body {
+    background: #10001f;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- Tela Inicial --- */
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 400px;
+    padding: 25px;
+    background: #6A0DAD;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #6A0DAD;
+}
+
+textarea {
+    width: 95%;
+    height: 120px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    font-family: monospace;
+}
+
+.select-nivel {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: #4b0082;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #4b0082;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover { background: #32005a; }
+
+/* --- Tela do Jogo --- */
+h1 { text-align: center; }
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    /* A MÁGICA: O número de colunas vem do HTML (Python) */
+    grid-template-columns: repeat(var(--tam), 35px);
+    
+    gap: 6px;
+    background: #250042;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content; /* O tamanho se ajusta ao conteúdo (seja 10x10 ou 20x20) */
+    margin: 0 auto;
+    
+    user-select: none;
+    touch-action: none;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    background: #1a002d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Classes controladas pelo JS */
+.cell.selected {
+    background: #9b30ff !important;
+    transform: scale(1.1);
+}
+
+.cell.found {
+    background: #00ffae !important;
+    color: #000;
+}
+
+.lista {
+    background: #250042;
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 200px;
+    height: fit-content;
+}
+
+.lista ul { padding: 0; list-style: none; }
+.lista li { margin: 8px 0; font-size: 18px; transition: 0.3s; }
+
+.pendente { color: #ffb3ff; }
+.completa { 
+    color: #00ffae; 
+    text-decoration: line-through; 
+    opacity: 0.7;
+}
+
+#mensagem-final {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 28px;
+    background: #00ffae;
+    color: black;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 50px rgba(0,255,174,0.5);
+    z-index: 100;
+}
+
+.hidden { display: none; }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogar Caça-Palavras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="jogo">
+
+    <h1>Caça-Palavras</h1>
+
+    <div class="container">
+        <div class="grid" id="grid" style="--tam: {{ tamanho }}">
+            {% for i in range(tamanho) %}
+                {% for j in range(tamanho) %}
+                    <div class="cell" data-row="{{ i }}" data-col="{{ j }}">
+                        {{ grade[i][j] }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+
+        <div class="lista">
+            <h2>Palavras</h2>
+            <ul id="palavras">
+                {% for p in palavras %}
+                <li class="pendente">{{ p }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div id="mensagem-final" class="hidden">
+        PARABÉNS! VOCÊ VENCEU! 🎉
+        <br>
+        <a href="/" style="color: black; font-size: 16px;">Jogar Novamente</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
