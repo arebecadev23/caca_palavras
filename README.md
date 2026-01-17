@@ -36,5 +36,5 @@ Certifique-se de ter o [Python](https://www.python.org/) e o [Git](https://git-s
 
 ### 1. Clone o repositório
 ```bash
-git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
-cd NOME-DO-REPOSITORIO
+[git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+cd NOME-DO-REPOSITORIO](https://github.com/arebecadev23/caca_palavras.git)
