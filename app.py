@@ -69,4 +69,4 @@ def jogar():
 
 # --- ESSA PARTE É A QUE ESTAVA FALTANDO ---
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
